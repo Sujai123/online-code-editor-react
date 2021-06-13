@@ -20,3 +20,22 @@ code {
 .flex {
   display: flex;
 }
+
+
+@media print {
+  body {
+    background: none;
+  }
+
+  #toolbar {
+    display: none;
+  }
+
+  #document {
+    box-shadow: none;
+    border: 1px solid black;
+    display: block !important;
+  }
+
+
+}

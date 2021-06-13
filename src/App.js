@@ -2,7 +2,7 @@ import EditorContainer from "./components/Editor/EditorContainer"
 
 function App() {
   return (
-    <div>
+    <div id="app">
       <EditorContainer />
     </div>
   );

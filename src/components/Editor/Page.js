@@ -20,7 +20,9 @@ const Page = () => {
   const [value, documentRef] = useCodeEditor();
 
   return (
-    <PageLayout>
+    <PageLayout
+      id="document"
+    >
       <PageInput
         ref={documentRef}
         contentEditable={true}

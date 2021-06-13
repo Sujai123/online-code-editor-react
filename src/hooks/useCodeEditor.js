@@ -8,14 +8,10 @@ const useCodeEditor = () => {
   const [value, setValue] = useState(GREETING_TEXT);
 
   useEffect(() => {
-    documentRef.current.innerHTML = "hello world";
-  }, []);
-
-  useEffect(() => {
 
     const currentDocumentRef = documentRef.current;
-    function handleKeyDown(e) {
-      console.log("Key Pressed");
+    function handleKeyDown(event) {
+      console.log("Key Pressed", event);
     }
 
     currentDocumentRef.addEventListener(KEY_DOWN_EVENT, handleKeyDown);

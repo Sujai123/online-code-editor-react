@@ -20,7 +20,7 @@ const Container = styled.div`
 
 const ToolBar = () => {
   return (
-    <ToolBarLayout>
+    <ToolBarLayout id="toolbar">
       <Container>
         <TextStyle />
         <TextFormatting />
